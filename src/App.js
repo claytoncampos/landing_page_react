@@ -1,19 +1,19 @@
 import React from "react";
 import "./styles.css";
-
+import Footer from "./Componentes/footer/Footer"
 import Header from "./Componentes/Header"
 import Card from "./Componentes/Card"
 import ContactContainer from "./Componentes/ContactContainer"
 
 export default function App() {
-  return(
+    return (
         <div id='body'>
-            <Header/>
-            
-            <Card 
+            <Header />
+
+            <Card
                 className='section'
                 img='./Capture1.PNG'
-                title='About the Company' 
+                title='About the Company'
                 description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -22,9 +22,9 @@ export default function App() {
                         pariatur.'
             />
 
-            <Card 
+            <Card
                 className='section bg-grey'
-                img='./Capture3.PNG' 
+                img='./Capture3.PNG'
                 title='Our Values'
                 description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -34,10 +34,10 @@ export default function App() {
                         pariatur.'
             />
 
-            <Card 
+            <Card
                 className='section'
-                img='./Capture1.PNG' 
-                title='Our Mission' 
+                img='./Capture1.PNG'
+                title='Our Mission'
                 description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -45,7 +45,8 @@ export default function App() {
                         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur.'
             />
-            <ContactContainer/>
+            <ContactContainer />
+            <Footer />
         </div>
     );
 }
